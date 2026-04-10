@@ -301,6 +301,10 @@ ro.surface_flinger.uclamp.min=328
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.game_default_frame_rate_override=120
 
+# Scroll Optimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1

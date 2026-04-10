@@ -14,6 +14,25 @@ $(call inherit-product, device/infinix/X6833B/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AxionAOSP Bringup
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
+AXION_CAMERA_REAR_INFO := 64,2
+AXION_CAMERA_FRONT_INFO := 16
+
+AXION_MAINTAINER := Apichat_chata
+AXION_PROCESSOR := Mediatek_Helio_G99
+
+BYPASS_CHARGE_SUPPORTED ?= false
+
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+
+# Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue 
+PERF_ANIM_OVERRIDE := true
+
 BOARD_VENDOR := Infinix
 PRODUCT_NAME := lineage_X6833B
 PRODUCT_DEVICE := X6833B
